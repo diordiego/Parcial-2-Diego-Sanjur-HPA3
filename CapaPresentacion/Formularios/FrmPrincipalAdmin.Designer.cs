@@ -30,20 +30,20 @@
         {
             components = new System.ComponentModel.Container();
             pnlMenu = new Panel();
-            lblLogo = new Label();
-            lblLogoSub = new Label();
-            btnInicio = new Button();
-            btnRegistro = new Button();
-            btnCerrarSesion = new Button();
             pnlSesion = new Panel();
-            lblAvatar = new Label();
-            lblNombreSesion = new Label();
-            lblDetalleSesion = new Label();
             lblUltimoAcceso = new Label();
+            lblDetalleSesion = new Label();
+            lblNombreSesion = new Label();
+            lblAvatar = new Label();
+            btnCerrarSesion = new Button();
+            btnRegistro = new Button();
+            btnInicio = new Button();
+            lblLogoSub = new Label();
+            lblLogo = new Label();
             pnlSuperior = new Panel();
-            lblTituloSeccion = new Label();
-            lblHora = new Label();
             lblFecha = new Label();
+            lblHora = new Label();
+            lblTituloSeccion = new Label();
             timerReloj = new System.Windows.Forms.Timer(components);
             pnlMenu.SuspendLayout();
             pnlSesion.SuspendLayout();
@@ -65,61 +65,63 @@
             pnlMenu.Size = new Size(240, 673);
             pnlMenu.TabIndex = 1;
             // 
-            // lblLogo
+            // pnlSesion
             // 
-            lblLogo.AutoSize = true;
-            lblLogo.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            lblLogo.ForeColor = Color.White;
-            lblLogo.Location = new Point(20, 18);
-            lblLogo.Name = "lblLogo";
-            lblLogo.Size = new Size(106, 37);
-            lblLogo.TabIndex = 0;
-            lblLogo.Text = "HPA III";
+            pnlSesion.BackColor = Color.FromArgb(22, 32, 43);
+            pnlSesion.Controls.Add(lblUltimoAcceso);
+            pnlSesion.Controls.Add(lblDetalleSesion);
+            pnlSesion.Controls.Add(lblNombreSesion);
+            pnlSesion.Controls.Add(lblAvatar);
+            pnlSesion.Dock = DockStyle.Bottom;
+            pnlSesion.Location = new Point(0, 583);
+            pnlSesion.Name = "pnlSesion";
+            pnlSesion.Size = new Size(240, 90);
+            pnlSesion.TabIndex = 5;
             // 
-            // lblLogoSub
+            // lblUltimoAcceso
             // 
-            lblLogoSub.AutoSize = true;
-            lblLogoSub.Font = new Font("Segoe UI", 8.5F);
-            lblLogoSub.ForeColor = Color.FromArgb(160, 190, 220);
-            lblLogoSub.Location = new Point(23, 54);
-            lblLogoSub.Name = "lblLogoSub";
-            lblLogoSub.Size = new Size(167, 20);
-            lblLogoSub.TabIndex = 1;
-            lblLogoSub.Text = "Panel de administración";
+            lblUltimoAcceso.AutoEllipsis = true;
+            lblUltimoAcceso.Font = new Font("Segoe UI", 8F, FontStyle.Bold);
+            lblUltimoAcceso.ForeColor = Color.FromArgb(120, 140, 160);
+            lblUltimoAcceso.Location = new Point(70, 56);
+            lblUltimoAcceso.Name = "lblUltimoAcceso";
+            lblUltimoAcceso.Size = new Size(165, 18);
+            lblUltimoAcceso.TabIndex = 3;
+            lblUltimoAcceso.Text = "label1";
             // 
-            // btnInicio
+            // lblDetalleSesion
             // 
-            btnInicio.Cursor = Cursors.Hand;
-            btnInicio.FlatAppearance.BorderSize = 0;
-            btnInicio.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 62, 80);
-            btnInicio.FlatStyle = FlatStyle.Flat;
-            btnInicio.Font = new Font("Segoe UI", 10.5F);
-            btnInicio.ForeColor = Color.White;
-            btnInicio.Location = new Point(0, 100);
-            btnInicio.Name = "btnInicio";
-            btnInicio.Padding = new Padding(20, 0, 0, 0);
-            btnInicio.Size = new Size(240, 48);
-            btnInicio.TabIndex = 2;
-            btnInicio.Text = "⌂   Inicio";
-            btnInicio.TextAlign = ContentAlignment.MiddleLeft;
-            btnInicio.UseVisualStyleBackColor = true;
+            lblDetalleSesion.AutoEllipsis = true;
+            lblDetalleSesion.Font = new Font("Segoe UI", 8.5F, FontStyle.Bold);
+            lblDetalleSesion.ForeColor = Color.FromArgb(160, 190, 220);
+            lblDetalleSesion.Location = new Point(70, 36);
+            lblDetalleSesion.Name = "lblDetalleSesion";
+            lblDetalleSesion.Size = new Size(165, 18);
+            lblDetalleSesion.TabIndex = 2;
+            lblDetalleSesion.Text = "label1";
             // 
-            // btnRegistro
+            // lblNombreSesion
             // 
-            btnRegistro.Cursor = Cursors.Hand;
-            btnRegistro.FlatAppearance.BorderSize = 0;
-            btnRegistro.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 62, 80);
-            btnRegistro.FlatStyle = FlatStyle.Flat;
-            btnRegistro.Font = new Font("Segoe UI", 10.5F);
-            btnRegistro.ForeColor = Color.White;
-            btnRegistro.Location = new Point(0, 148);
-            btnRegistro.Name = "btnRegistro";
-            btnRegistro.Padding = new Padding(20, 0, 0, 0);
-            btnRegistro.Size = new Size(240, 48);
-            btnRegistro.TabIndex = 3;
-            btnRegistro.Text = "✎   Registro de usuarios";
-            btnRegistro.TextAlign = ContentAlignment.MiddleLeft;
-            btnRegistro.UseVisualStyleBackColor = true;
+            lblNombreSesion.AutoEllipsis = true;
+            lblNombreSesion.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblNombreSesion.ForeColor = Color.White;
+            lblNombreSesion.Location = new Point(70, 14);
+            lblNombreSesion.Name = "lblNombreSesion";
+            lblNombreSesion.Size = new Size(165, 20);
+            lblNombreSesion.TabIndex = 1;
+            lblNombreSesion.Text = "label1";
+            // 
+            // lblAvatar
+            // 
+            lblAvatar.BackColor = Color.FromArgb(0, 122, 204);
+            lblAvatar.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
+            lblAvatar.ForeColor = Color.White;
+            lblAvatar.Location = new Point(14, 20);
+            lblAvatar.Name = "lblAvatar";
+            lblAvatar.Size = new Size(48, 48);
+            lblAvatar.TabIndex = 0;
+            lblAvatar.Text = "?";
+            lblAvatar.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnCerrarSesion
             // 
@@ -138,63 +140,61 @@
             btnCerrarSesion.TextAlign = ContentAlignment.MiddleLeft;
             btnCerrarSesion.UseVisualStyleBackColor = true;
             // 
-            // pnlSesion
+            // btnRegistro
             // 
-            pnlSesion.BackColor = Color.FromArgb(22, 32, 43);
-            pnlSesion.Controls.Add(lblUltimoAcceso);
-            pnlSesion.Controls.Add(lblDetalleSesion);
-            pnlSesion.Controls.Add(lblNombreSesion);
-            pnlSesion.Controls.Add(lblAvatar);
-            pnlSesion.Dock = DockStyle.Bottom;
-            pnlSesion.Location = new Point(0, 583);
-            pnlSesion.Name = "pnlSesion";
-            pnlSesion.Size = new Size(240, 90);
-            pnlSesion.TabIndex = 5;
+            btnRegistro.Cursor = Cursors.Hand;
+            btnRegistro.FlatAppearance.BorderSize = 0;
+            btnRegistro.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 62, 80);
+            btnRegistro.FlatStyle = FlatStyle.Flat;
+            btnRegistro.Font = new Font("Segoe UI", 10.5F);
+            btnRegistro.ForeColor = Color.White;
+            btnRegistro.Location = new Point(0, 148);
+            btnRegistro.Name = "btnRegistro";
+            btnRegistro.Padding = new Padding(20, 0, 0, 0);
+            btnRegistro.Size = new Size(240, 48);
+            btnRegistro.TabIndex = 3;
+            btnRegistro.Text = "✎   Registro de usuarios";
+            btnRegistro.TextAlign = ContentAlignment.MiddleLeft;
+            btnRegistro.UseVisualStyleBackColor = true;
             // 
-            // lblAvatar
+            // btnInicio
             // 
-            lblAvatar.BackColor = Color.FromArgb(0, 122, 204);
-            lblAvatar.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            lblAvatar.ForeColor = Color.White;
-            lblAvatar.Location = new Point(14, 20);
-            lblAvatar.Name = "lblAvatar";
-            lblAvatar.Size = new Size(48, 48);
-            lblAvatar.TabIndex = 0;
-            lblAvatar.Text = "?";
-            lblAvatar.TextAlign = ContentAlignment.MiddleCenter;
+            btnInicio.Cursor = Cursors.Hand;
+            btnInicio.FlatAppearance.BorderSize = 0;
+            btnInicio.FlatAppearance.MouseOverBackColor = Color.FromArgb(45, 62, 80);
+            btnInicio.FlatStyle = FlatStyle.Flat;
+            btnInicio.Font = new Font("Segoe UI", 10.5F);
+            btnInicio.ForeColor = Color.White;
+            btnInicio.Location = new Point(0, 100);
+            btnInicio.Name = "btnInicio";
+            btnInicio.Padding = new Padding(20, 0, 0, 0);
+            btnInicio.Size = new Size(240, 48);
+            btnInicio.TabIndex = 2;
+            btnInicio.Text = "⌂   Inicio";
+            btnInicio.TextAlign = ContentAlignment.MiddleLeft;
+            btnInicio.UseVisualStyleBackColor = true;
             // 
-            // lblNombreSesion
+            // lblLogoSub
             // 
-            lblNombreSesion.AutoEllipsis = true;
-            lblNombreSesion.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
-            lblNombreSesion.ForeColor = Color.White;
-            lblNombreSesion.Location = new Point(70, 14);
-            lblNombreSesion.Name = "lblNombreSesion";
-            lblNombreSesion.Size = new Size(165, 20);
-            lblNombreSesion.TabIndex = 1;
-            lblNombreSesion.Text = "label1";
+            lblLogoSub.AutoSize = true;
+            lblLogoSub.Font = new Font("Segoe UI", 8.5F);
+            lblLogoSub.ForeColor = Color.FromArgb(160, 190, 220);
+            lblLogoSub.Location = new Point(23, 54);
+            lblLogoSub.Name = "lblLogoSub";
+            lblLogoSub.Size = new Size(167, 20);
+            lblLogoSub.TabIndex = 1;
+            lblLogoSub.Text = "Panel de administración";
             // 
-            // lblDetalleSesion
+            // lblLogo
             // 
-            lblDetalleSesion.AutoEllipsis = true;
-            lblDetalleSesion.Font = new Font("Segoe UI", 8.5F, FontStyle.Bold);
-            lblDetalleSesion.ForeColor = Color.FromArgb(160, 190, 220);
-            lblDetalleSesion.Location = new Point(70, 36);
-            lblDetalleSesion.Name = "lblDetalleSesion";
-            lblDetalleSesion.Size = new Size(165, 18);
-            lblDetalleSesion.TabIndex = 2;
-            lblDetalleSesion.Text = "label1";
-            // 
-            // lblUltimoAcceso
-            // 
-            lblUltimoAcceso.AutoEllipsis = true;
-            lblUltimoAcceso.Font = new Font("Segoe UI", 8F, FontStyle.Bold);
-            lblUltimoAcceso.ForeColor = Color.FromArgb(120, 140, 160);
-            lblUltimoAcceso.Location = new Point(70, 56);
-            lblUltimoAcceso.Name = "lblUltimoAcceso";
-            lblUltimoAcceso.Size = new Size(165, 18);
-            lblUltimoAcceso.TabIndex = 3;
-            lblUltimoAcceso.Text = "label1";
+            lblLogo.AutoSize = true;
+            lblLogo.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            lblLogo.ForeColor = Color.White;
+            lblLogo.Location = new Point(20, 18);
+            lblLogo.Name = "lblLogo";
+            lblLogo.Size = new Size(106, 37);
+            lblLogo.TabIndex = 0;
+            lblLogo.Text = "HPA III";
             // 
             // pnlSuperior
             // 
@@ -208,6 +208,30 @@
             pnlSuperior.Size = new Size(942, 80);
             pnlSuperior.TabIndex = 2;
             // 
+            // lblFecha
+            // 
+            lblFecha.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            lblFecha.Font = new Font("Segoe UI", 10F);
+            lblFecha.ForeColor = Color.FromArgb(0, 122, 204);
+            lblFecha.Location = new Point(584, 48);
+            lblFecha.Name = "lblFecha";
+            lblFecha.Size = new Size(340, 24);
+            lblFecha.TabIndex = 2;
+            lblFecha.Text = "label1";
+            lblFecha.TextAlign = ContentAlignment.TopRight;
+            // 
+            // lblHora
+            // 
+            lblHora.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            lblHora.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
+            lblHora.ForeColor = Color.FromArgb(30, 42, 56);
+            lblHora.Location = new Point(584, 2);
+            lblHora.Name = "lblHora";
+            lblHora.Size = new Size(340, 44);
+            lblHora.TabIndex = 1;
+            lblHora.Text = "00:00:00";
+            lblHora.TextAlign = ContentAlignment.MiddleRight;
+            // 
             // lblTituloSeccion
             // 
             lblTituloSeccion.AutoSize = true;
@@ -218,30 +242,6 @@
             lblTituloSeccion.Size = new Size(88, 37);
             lblTituloSeccion.TabIndex = 0;
             lblTituloSeccion.Text = "Inicio";
-            // 
-            // lblHora
-            // 
-            lblHora.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            lblHora.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
-            lblHora.ForeColor = Color.FromArgb(30, 42, 56);
-            lblHora.Location = new Point(624, 6);
-            lblHora.Name = "lblHora";
-            lblHora.Size = new Size(300, 40);
-            lblHora.TabIndex = 1;
-            lblHora.Text = "00:00:00";
-            lblHora.TextAlign = ContentAlignment.MiddleRight;
-            // 
-            // lblFecha
-            // 
-            lblFecha.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            lblFecha.Font = new Font("Segoe UI", 10F);
-            lblFecha.ForeColor = Color.FromArgb(0, 122, 204);
-            lblFecha.Location = new Point(624, 46);
-            lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(300, 24);
-            lblFecha.TabIndex = 2;
-            lblFecha.Text = "label1";
-            lblFecha.TextAlign = ContentAlignment.TopRight;
             // 
             // timerReloj
             // 

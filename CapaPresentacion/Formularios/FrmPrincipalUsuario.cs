@@ -13,7 +13,7 @@ public partial class FrmPrincipalUsuario : Form, IPrincipalView
     public event EventHandler? VistaCargada;
     public event EventHandler? RelojTick;
     public event EventHandler? InicioSolicitado;
-    public event EventHandler? RegistroSolicitado;   // no se usa en esta pantalla
+    public event EventHandler? RegistroSolicitado { add { } remove { } } 
     public event EventHandler? PerfilSolicitado;
     public event EventHandler? CerrarSesionSolicitado;
 

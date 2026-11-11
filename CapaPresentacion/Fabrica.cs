@@ -31,6 +31,25 @@ internal static class Fabrica
         return (vista, presentador);
     }
 
-    // Se completa en el paso 10 con Registro y Perfil
-    public static Form? CrearModulo(ModuloSistema modulo) => null;
+    // Crea el formulario hijo de cada opción del menú con su presentador
+    public static Form? CrearModulo(ModuloSistema modulo) => modulo switch
+    {
+        ModuloSistema.Registro => CrearRegistro(),
+        ModuloSistema.Perfil => CrearPerfil(),
+        _ => null
+    };
+
+    private static FrmRegistroUsuario CrearRegistro()
+    {
+        var vista = new FrmRegistroUsuario();
+        _ = new RegistroUsuarioPresenter(vista, ServicioUsuarios);
+        return vista;
+    }
+
+    private static FrmPerfil CrearPerfil()
+    {
+        var vista = new FrmPerfil();
+        _ = new PerfilPresenter(vista);
+        return vista;
+    }
 }   

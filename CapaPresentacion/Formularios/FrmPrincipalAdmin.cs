@@ -14,7 +14,7 @@ public partial class FrmPrincipalAdmin : Form, IPrincipalView
     public event EventHandler? RelojTick;
     public event EventHandler? InicioSolicitado;
     public event EventHandler? RegistroSolicitado;
-    public event EventHandler? PerfilSolicitado;   // no se usa en esta pantalla
+    public event EventHandler? PerfilSolicitado { add { } remove { } }
     public event EventHandler? CerrarSesionSolicitado;
 
     public FrmPrincipalAdmin()

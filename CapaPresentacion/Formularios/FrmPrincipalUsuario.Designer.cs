@@ -81,7 +81,7 @@
             // lblUltimoAcceso
             // 
             lblUltimoAcceso.AutoEllipsis = true;
-            lblUltimoAcceso.Font = new Font("Segoe UI", 8F, FontStyle.Bold);
+            lblUltimoAcceso.Font = new Font("Segoe UI", 7.5F, FontStyle.Bold);
             lblUltimoAcceso.ForeColor = Color.FromArgb(120, 140, 160);
             lblUltimoAcceso.Location = new Point(70, 56);
             lblUltimoAcceso.Name = "lblUltimoAcceso";
@@ -92,7 +92,7 @@
             // lblDetalleSesion
             // 
             lblDetalleSesion.AutoEllipsis = true;
-            lblDetalleSesion.Font = new Font("Segoe UI", 8.5F, FontStyle.Bold);
+            lblDetalleSesion.Font = new Font("Segoe UI", 7.5F, FontStyle.Bold);
             lblDetalleSesion.ForeColor = Color.FromArgb(160, 190, 220);
             lblDetalleSesion.Location = new Point(70, 36);
             lblDetalleSesion.Name = "lblDetalleSesion";
@@ -103,7 +103,7 @@
             // lblNombreSesion
             // 
             lblNombreSesion.AutoEllipsis = true;
-            lblNombreSesion.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblNombreSesion.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lblNombreSesion.ForeColor = Color.White;
             lblNombreSesion.Location = new Point(70, 14);
             lblNombreSesion.Name = "lblNombreSesion";
@@ -213,9 +213,9 @@
             lblFecha.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblFecha.Font = new Font("Segoe UI", 10F);
             lblFecha.ForeColor = Color.FromArgb(0, 122, 204);
-            lblFecha.Location = new Point(624, 46);
+            lblFecha.Location = new Point(584, 48);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(300, 24);
+            lblFecha.Size = new Size(340, 24);
             lblFecha.TabIndex = 2;
             lblFecha.Text = "label1";
             lblFecha.TextAlign = ContentAlignment.TopRight;
@@ -225,9 +225,9 @@
             lblHora.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblHora.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
             lblHora.ForeColor = Color.FromArgb(30, 42, 56);
-            lblHora.Location = new Point(624, 6);
+            lblHora.Location = new Point(584, 2);
             lblHora.Name = "lblHora";
-            lblHora.Size = new Size(300, 40);
+            lblHora.Size = new Size(340, 44);
             lblHora.TabIndex = 1;
             lblHora.Text = "00:00:00";
             lblHora.TextAlign = ContentAlignment.MiddleRight;
